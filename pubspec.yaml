@@ -49,6 +49,12 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   expansion_card: ^0.1.0
   expansion_tile_card: ^2.0.0
+  flutter_native_splash: ^2.2.9
+
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/splash.PNG
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
