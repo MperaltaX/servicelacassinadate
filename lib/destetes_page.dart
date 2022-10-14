@@ -84,6 +84,7 @@ class _DateTimePickerState extends State<DateTimePickerDtt> {
       ),
       body: Container(
         decoration: BoxDecoration(
+          color: Color(0xff0D2B50),
           //color: Colors.orangeAccent,
           image: DecorationImage(
             image: AssetImage("assets/imgScreen2.png"),
