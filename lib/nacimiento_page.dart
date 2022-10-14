@@ -113,7 +113,7 @@ class _DateTimePickerState extends State<DateTimePickerNac> {
                         color: Color.fromARGB(255, 211, 180, 97),
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w900,
-                        fontSize: 20,
+                        fontSize: 23,
                         letterSpacing: 0.5),
                   ),
                   InkWell(
@@ -153,6 +153,7 @@ class _DateTimePickerState extends State<DateTimePickerNac> {
                     _textNacFinal.text,
                     style: TextStyle(
                         color: Color.fromARGB(255, 211, 180, 97),
+                        fontSize: 18,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w600,
                         letterSpacing: 0.5),
@@ -162,6 +163,7 @@ class _DateTimePickerState extends State<DateTimePickerNac> {
                     _textNacInicio.text,
                     style: TextStyle(
                         color: Color.fromARGB(255, 211, 180, 97),
+                        fontSize: 18,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w600,
                         letterSpacing: 0.5),
@@ -171,6 +173,7 @@ class _DateTimePickerState extends State<DateTimePickerNac> {
                     _textNacFin.text,
                     style: TextStyle(
                         color: Color.fromARGB(255, 211, 180, 97),
+                        fontSize: 18,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w600,
                         letterSpacing: 0.5),
