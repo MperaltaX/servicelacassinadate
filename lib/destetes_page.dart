@@ -84,6 +84,7 @@ class _DateTimePickerState extends State<DateTimePickerDtt> {
       ),
       body: Container(
         decoration: BoxDecoration(
+          color: Color(0xff0D2B50),
           //color: Colors.orangeAccent,
           image: DecorationImage(
             image: AssetImage("assets/imgScreen2.png"),
@@ -109,7 +110,7 @@ class _DateTimePickerState extends State<DateTimePickerDtt> {
                         color: Color.fromARGB(255, 211, 180, 97),
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w900,
-                        fontSize: 20,
+                        fontSize: 23,
                         letterSpacing: 0.5),
                   ),
                   InkWell(
@@ -149,6 +150,7 @@ class _DateTimePickerState extends State<DateTimePickerDtt> {
                     _textNacFinal.text,
                     style: TextStyle(
                         color: Color.fromARGB(255, 211, 180, 97),
+                        fontSize: 18,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w600,
                         letterSpacing: 0.5),
@@ -158,6 +160,7 @@ class _DateTimePickerState extends State<DateTimePickerDtt> {
                     _textNacInicio.text,
                     style: TextStyle(
                         color: Color.fromARGB(255, 211, 180, 97),
+                        fontSize: 18,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w600,
                         letterSpacing: 0.5),
@@ -167,6 +170,7 @@ class _DateTimePickerState extends State<DateTimePickerDtt> {
                     _textNacFin.text,
                     style: TextStyle(
                         color: Color.fromARGB(255, 211, 180, 97),
+                        fontSize: 18,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w600,
                         letterSpacing: 0.5),

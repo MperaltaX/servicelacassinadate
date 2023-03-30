@@ -84,6 +84,7 @@ class _DateTimePickerState extends State<DateTimePickerMes> {
       ),
       body: Container(
         decoration: BoxDecoration(
+          color: Color(0xff0D2B50),
           //color: Colors.orangeAccent,
           image: DecorationImage(
             image: AssetImage("assets/imgScreen3.png"),
@@ -107,9 +108,9 @@ class _DateTimePickerState extends State<DateTimePickerMes> {
                     'Seleccionar fecha nacimiento',
                     style: TextStyle(
                         color: Color.fromARGB(255, 211, 180, 97),
-                        fontStyle: FontStyle.italic,
+                        //fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w900,
-                        fontSize: 20,
+                        fontSize: 23,
                         letterSpacing: 0.5),
                   ),
                   InkWell(
@@ -149,6 +150,7 @@ class _DateTimePickerState extends State<DateTimePickerMes> {
                     _textNacFinal.text,
                     style: TextStyle(
                         color: Color.fromARGB(255, 211, 180, 97),
+                        fontSize: 18,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w600,
                         letterSpacing: 0.5),
@@ -158,6 +160,7 @@ class _DateTimePickerState extends State<DateTimePickerMes> {
                     _textNacInicio.text,
                     style: TextStyle(
                         color: Color.fromARGB(255, 211, 180, 97),
+                        fontSize: 18,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w600,
                         letterSpacing: 0.5),
@@ -167,6 +170,7 @@ class _DateTimePickerState extends State<DateTimePickerMes> {
                     _textNacFin.text,
                     style: TextStyle(
                         color: Color.fromARGB(255, 211, 180, 97),
+                        fontSize: 18,
                         fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w600,
                         letterSpacing: 0.5),
