@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:service_date/chat_api.dart';
 import 'package:service_date/servicios_page.dart';
 import '18meses_page.dart';
+import 'chat_page.dart';
+import 'deps.dart';
 import 'destetes_page.dart';
 import 'nacimiento_page.dart';
 import 'package:expansion_tile_card/expansion_tile_card.dart';
+import 'chat_api.dart';
+import 'chat_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp(chatApi: ChatApi()));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key, required this.chatApi}) : super(key: key);
+  final ChatApi chatApi;
 
   // This widget is the root of your application.
   @override
@@ -20,14 +26,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Control de fechas'),
+      home: MyHomePage(title: 'Control de fechas', chatApi: chatApi),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
+  const MyHomePage({Key? key, required this.title, required this.chatApi})
+      : super(key: key);
+  final ChatApi chatApi;
   final String title;
 
   @override
@@ -41,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final GlobalKey<ExpansionTileCardState> cardB = new GlobalKey();
   final GlobalKey<ExpansionTileCardState> cardC = new GlobalKey();
   final GlobalKey<ExpansionTileCardState> cardD = new GlobalKey();
-
+  final GlobalKey<ExpansionTileCardState> cardE = new GlobalKey();
   @override
   Widget build(BuildContext context) {
     final ButtonStyle flatButtonStyle = TextButton.styleFrom(
@@ -350,6 +357,77 @@ class _MyHomePageState extends State<MyHomePage> {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => DateTimePickerMes()),
+                          );
+                        },
+                        child: Column(
+                          children: <Widget>[
+                            Icon(
+                              Icons.arrow_circle_right,
+                              color: Color.fromARGB(255, 13, 43, 80),
+                            ),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 2.0),
+                            ),
+                            Text(
+                              'IR',
+                              style: TextStyle(
+                                  color: Color.fromARGB(150, 13, 43, 80)),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12.0),
+              child: ExpansionTileCard(
+                expandedTextColor: Color.fromARGB(255, 211, 180, 97),
+                key: cardE,
+                leading: CircleAvatar(
+                  child: Text('E'),
+                  backgroundColor: Color(0xff0D2B50),
+                ),
+                title: Text('AYUDANTE DEPS (Beta abierta)'),
+                subtitle: Text(''),
+                children: <Widget>[
+                  Divider(
+                    thickness: 1.0,
+                    height: 1.0,
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16.0,
+                        vertical: 8.0,
+                      ),
+                      child: Text(
+                        """Obtenga ayuda para leer Dep's (Se ultilizan las reglas del programa ERA)""",
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyText2!
+                            .copyWith(fontSize: 16),
+                      ),
+                    ),
+                  ),
+                  ButtonBar(
+                    alignment: MainAxisAlignment.spaceAround,
+                    buttonHeight: 52.0,
+                    buttonMinWidth: 90.0,
+                    children: <Widget>[
+                      TextButton(
+                        style: flatButtonStyle,
+                        onPressed: () {
+                          //cardB.currentState?.expand();
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    ChatPage(chatApi: ChatApi())),
                           );
                         },
                         child: Column(
