@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 class ChatPage extends StatefulWidget {
   const ChatPage({
     required this.chatApi,
-    super.key,
+    key,
   });
 
   final ChatApi chatApi;
