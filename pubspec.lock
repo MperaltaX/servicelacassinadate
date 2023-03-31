@@ -116,8 +116,8 @@ packages:
   expansion_tile_card:
     dependency: "direct main"
     description:
-      path: "C:/Users/Mattias/AppData/Local/Pub/Cache/hosted/pub.dev/expansion_tile_card-2.0.0"
-      relative: false
+      path: "lib/package/expansion_tile_card-2.0.0"
+      relative: true
     source: path
     version: "2.0.0"
   fake_async:
