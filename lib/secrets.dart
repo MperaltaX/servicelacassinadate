@@ -1,3 +1,3 @@
 // secrets.dart
-const openAiApiKey = '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';
+const openAiApiKey = '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';
 const openAiOrg = '';
