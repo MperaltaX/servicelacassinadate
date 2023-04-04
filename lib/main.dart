@@ -427,8 +427,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>
-                                    ChatPage(chatApi: ChatApi())),
+                                //       builder: (context) =>
+                                //           ChatPage(chatApi: ChatApi())), //para chatgpt
+                                builder: (context) => MenuScreen()),
                           );
                         },
                         child: Column(

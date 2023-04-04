@@ -20,7 +20,8 @@ dependencies:
   flutter:
     sdk: flutter
   expansion_tile_card:
-    path: ../
+    #path: ../
+    #publish_to: none
 
 
   # The following adds the Cupertino Icons font to your application.

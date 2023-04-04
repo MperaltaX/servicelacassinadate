@@ -88,7 +88,15 @@ class _DateTimePickerState extends State<DateTimePickerNac> {
       body: Container(
         decoration: BoxDecoration(
           //color: Colors.orangeAccent,
-          color: Color(0xff0D2B50),
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [
+              Colors.blue,
+              Color(0xff0D2B50),
+            ],
+          ),
+          // color: Color(0xff0D2B50),
           image: DecorationImage(
             image: AssetImage("assets/imgScreen1.png"),
             fit: BoxFit.cover,

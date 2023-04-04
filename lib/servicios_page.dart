@@ -85,7 +85,15 @@ class _DateTimePickerState extends State<DateTimePickerServ> {
       body: Container(
         decoration: BoxDecoration(
           //color: Colors.orangeAccent,
-          color: Color(0xff0D2B50),
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [
+              Colors.blue,
+              Color(0xff0D2B50),
+            ],
+          ),
+          // color: Color(0xff0D2B50),
           image: DecorationImage(
             image: AssetImage("assets/imgScreen4.png"),
             fit: BoxFit.cover,
@@ -93,6 +101,17 @@ class _DateTimePickerState extends State<DateTimePickerServ> {
         ),
         width: _width,
         height: _height,
+        //     BoxDecoration(
+        //         gradient: LinearGradient(
+        //   begin: Alignment.topRight,
+        //   end: Alignment.bottomLeft,
+        //   colors: [
+        //     Colors.blue,
+        //     Color(0xff0D2B50),
+        //   ],
+        // )),
+        // width: _width,
+        // height: _height,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
