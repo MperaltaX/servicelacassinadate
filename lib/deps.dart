@@ -46,6 +46,7 @@ class _MenuScreenSate extends State<MenuScreen> {
     return Scaffold(
         appBar: AppBar(
           title: Text("DEP'S TOROS (Beta abierta)"),
+          backgroundColor: Color(0xff0D2B50),
         ),
         body: SingleChildScrollView(
             child: Container(
@@ -95,6 +96,7 @@ class _MenuScreenSate extends State<MenuScreen> {
                 ),
                 SizedBox(height: 20),
                 Slider(
+                  activeColor: Color.fromARGB(255, 211, 180, 97),
                   value: _sliderValue,
                   min: minSlider,
                   max: maxSlider,
@@ -146,6 +148,7 @@ class _MenuScreenSate extends State<MenuScreen> {
                 ),
                 const SizedBox(height: 10),
                 Slider(
+                  activeColor: Color.fromARGB(255, 211, 180, 97),
                   value: _sliderValue2,
                   min: 0.0,
                   max: 1.0,
@@ -205,7 +208,7 @@ class _MenuScreenSate extends State<MenuScreen> {
     return OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(20)),
         borderSide: BorderSide(
-          color: Colors.greenAccent,
+          color: Color.fromARGB(255, 250, 200, 62),
           width: 3,
         ));
   }
@@ -216,7 +219,7 @@ class _MenuScreenSate extends State<MenuScreen> {
         //Outline border type for TextFeild
         borderRadius: BorderRadius.all(Radius.circular(20)),
         borderSide: BorderSide(
-          color: Colors.blue,
+          color: Color.fromARGB(255, 211, 180, 97),
           width: 3,
         ));
   }
