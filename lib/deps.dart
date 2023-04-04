@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:flutter/cupertino.dart';
 
 class MenuScreen extends StatefulWidget {
   @override
@@ -28,6 +29,13 @@ class _MenuScreenSate extends State<MenuScreen> {
   int divSlider = 100;
   String _valorDep = '0.0';
   double _ValorPreci = 0.0;
+
+  bool _mostrarIcono = false;
+  void _mostrarOcultarIcono() {
+    setState(() {
+      _mostrarIcono = true;
+    });
+  }
 
   bool _validateTextField(Tf1) {
     if (Tf1 == null || Tf1 == '') {
@@ -181,7 +189,7 @@ class _MenuScreenSate extends State<MenuScreen> {
                     onPressed: () {
                       double numeroDouble = double.parse(_valorDep);
                       imprimirRespuesta(_selectedOption, numeroDouble);
-
+                      _mostrarOcultarIcono();
                       _depPrecisionController.clear();
                       _depValueController.clear();
                     }),
@@ -198,6 +206,13 @@ class _MenuScreenSate extends State<MenuScreen> {
                       focusedBorder: myfocusborder(), //focused border
                       // set more border style like disabledBorder
                     )),
+                const SizedBox(height: 40),
+                if (_mostrarIcono)
+                  const Icon(
+                    CupertinoIcons.checkmark_seal, // Ejemplo de icono
+                    color: Color.fromARGB(255, 211, 180, 97),
+                    size: 150, // Tamaño del icono
+                  )
               ],
             ),
           ),
@@ -208,7 +223,7 @@ class _MenuScreenSate extends State<MenuScreen> {
     return OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(20)),
         borderSide: BorderSide(
-          color: Color.fromARGB(255, 250, 200, 62),
+          color: Color.fromARGB(255, 211, 180, 97),
           width: 3,
         ));
   }
