@@ -14,7 +14,7 @@ class _MenuScreenSate extends State<MenuScreen> {
     'Leche',
     'Peso FINAL',
     'Circunferencia Escrotal',
-    'Altura'
+    //'Altura'
   ];
   final TextEditingController _depValueController = TextEditingController();
   final TextEditingController _depPrecisionController = TextEditingController();
