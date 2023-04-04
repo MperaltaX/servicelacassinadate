@@ -79495,7 +79495,7 @@ $S:33}
 A.XP.prototype={}
 A.oi.prototype={
 ac(){var s=null
-return new A.QK(A.a(["Peso al Nacer","Peso al Destete","Leche","Peso FINAL","Circunferencia Escrotal","Altura"],t.s),A.dJ(s),A.dJ(s),A.dJ(s),A.dJ(s),B.i)}}
+return new A.QK(A.a(["Peso al Nacer","Peso al Destete","Leche","Peso FINAL","Circunferencia Escrotal"],t.s),A.dJ(s),A.dJ(s),A.dJ(s),A.dJ(s),B.i)}}
 A.QK.prototype={
 aB(){this.aM()},
 H(a){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null,f=A.v9(g,g,A.aE("DEP'S TOROS (Beta abierta)",g,g,g,g,g,g)),e=A.R(a).ax,d=e.w
